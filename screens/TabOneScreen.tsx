@@ -25,6 +25,9 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
     return connector.killSession();
   }, [connector]);
 
+  console.log(connector.accounts)
+  console.log(connector.networkId)
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab One</Text>
